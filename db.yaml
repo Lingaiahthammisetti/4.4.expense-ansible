@@ -1,0 +1,8 @@
+- name: configure DB server
+  hosts: web #db
+  become: yes
+  tasks:
+  - name: Install MySQL server
+    ansible.builtin.dnf:
+      name: mysql-server
+      state: latest
