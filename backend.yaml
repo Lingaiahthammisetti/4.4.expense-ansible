@@ -2,7 +2,7 @@
   hosts: app
   become: yes
   vars:
-    login_host: 54.226.199.121
+    login_host: 3.80.250.236
     login_password: ExpenseApp@1
   tasks:
   - name: disable default nodejs
