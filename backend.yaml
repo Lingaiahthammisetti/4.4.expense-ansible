@@ -20,7 +20,7 @@
     - mysql
   
   - name: create expense user
-    anisble.builtin.user:
+    ansible.builtin.user:
       name: expense
 
   - name: create app directory
@@ -75,6 +75,6 @@
       state: started
       enabled: yes
 
-      
+
 
   
