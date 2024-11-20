@@ -1,8 +1,8 @@
 - name: configure DB server
-  hosts: web #db
+  hosts: db
   become: yes
   vars:
-    login_host: web
+    login_host: db
   vars_prompt:
   - name: mysql_root_password
     prompt: please enter MySQL root password
