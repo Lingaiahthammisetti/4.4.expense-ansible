@@ -1,8 +1,8 @@
 - name: configure backend server
-  hosts: app
+  hosts: backend
   become: yes
   vars:
-    login_host: 3.80.250.236
+    login_host: db.lingaiah.online
     login_password: ExpenseApp@1
   tasks:
   - name: disable default nodejs
