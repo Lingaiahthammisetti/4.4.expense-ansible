@@ -62,6 +62,7 @@
       login_password: "{{ login_password }}"
       login_host: "{{ login_host }}"
       target: /app/schema/backend.sql
+    ignore_errors: yes
       state: import
       name: all
 
