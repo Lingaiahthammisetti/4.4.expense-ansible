@@ -22,7 +22,6 @@
     ansible.builtin.pip:
       name:
       - PyMySQL
-      - MySQL-python
       - cryptography
       executable: pip3.11 #pip3.11 if python version is 3.11
 
@@ -42,5 +41,5 @@
       
   - name: setup root password
     ansible.builtin.command: "mysql_secure_installation --set-root-pass {{ mysql_root_password }}"
-    when: mysql_connection_output.failed is true #don't give {{ }} is when condition
+    when: mysql_connection_output.failed == true #don't give {{ }} is when condition
 
