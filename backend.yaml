@@ -64,7 +64,6 @@
       target: /app/schema/backend.sql
       state: import
       name: all
-    ignore_errors: yes
 
   - name: daemon reload
     ansible.builtin.systemd_service:
