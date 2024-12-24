@@ -1,6 +1,5 @@
 - name: configure DB server
-  ##hosts: db
-  hosts: localhost
+  hosts: db
   become: yes
   vars:
     login_host: db.lingaiah.online
@@ -27,7 +26,7 @@
       - PyMySQL
       - cryptography
       executable: pip3 #pip3.11 if python version is 3.11
-      
+
 
   # check password is already setup or not
   - name: check DB Connection
