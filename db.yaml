@@ -1,5 +1,6 @@
 - name: configure DB server
-  hosts: db
+  ##hosts: db
+  hosts: localhost
   become: yes
   vars:
     login_host: db.lingaiah.online
