@@ -23,7 +23,7 @@
       name:
       - PyMySQL
       - cryptography
-      executable: pip3.9 #pip3.11 if python version is 3.11
+      executable: pip3.11 #pip3.11 if python version is 3.11
 
   # check password is already setup or not
   - name: check DB Connection
