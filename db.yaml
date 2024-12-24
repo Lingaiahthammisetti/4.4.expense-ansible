@@ -8,7 +8,7 @@
   - name: mysql_root_password
     prompt: please enter MySQL root password
     private: no
-
+    
   tasks:
   - name: Install MySQL server
     ansible.builtin.dnf:
@@ -24,10 +24,9 @@
   - name: Install python mysql dependencies
     ansible.builtin.pip:
       name:
-     # - PyMySQL
-      - mysqlclient
+      - PyMySQL
       - cryptography
-      executable: pip3.11 #pip3.11 if python version is 3.11
+      executable: pip3 #pip3.11 if python version is 3.11
 
   # check password is already setup or not
   - name: check DB Connection
