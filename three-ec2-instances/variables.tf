@@ -11,7 +11,7 @@ variable "domain_name" {
 variable "instances" {
     type     = map
     default = {
-        mysql     = "t2.small"
+        db     = "t2.small"
         backend   = "t2.micro"
         frontend  = "t2.micro"
     }
