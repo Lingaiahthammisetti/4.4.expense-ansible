@@ -20,6 +20,8 @@ resource "aws_route53_record" "expense_r53" {
     name    = "${each.key}.${var.domain_name}"
     type    = "A"
     ttl     = 1
-    records = each.key == "frontend" ? [each.value.public_ip]:[each.value.private_ip]
+    #records = each.key == "frontend" ? [each.value.public_ip]:[each.value.private_ip]
+    records = [each.value.public_ip]
+    
     allow_overwrite = true
 }
